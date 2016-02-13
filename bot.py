@@ -2,7 +2,7 @@ import telebot
 import json
 from os.path import exists
 
-data = {}
+triggers = {}
 tfile = "data.json"
 tokenf = "token.txt"
 
@@ -16,7 +16,7 @@ if(exists(tfile)):
             f.close
         else:
             f = open(tfile)
-            data = json.load(f)
+            triggers = json.load(f)
 else:
     print("Creating new file.")
     f = open(tfile, 'w')
