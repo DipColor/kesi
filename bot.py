@@ -81,7 +81,7 @@ def add(m):
 #Sets separator character.
 @bot.message_handler(commands=['separator'])
 def separat(m):
-    v = "#$=*-|@~+^ยบ"
+    v = "Ysi"
     h = "Usage: /separator <char>\nset separator character for <Trigger> <Response>, valid chars: "+v
     cid = m.chat.id
     try:
