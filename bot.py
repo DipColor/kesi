@@ -32,7 +32,7 @@ if(exists(tokenf)):
 else:
     print("Token File not found, creating.")
     g = open(tokenf, 'w')
-    g.write("YOUR TOKEN HERE")
+    g.write("230059908:AAH4s9ZHe2ylGydwMXTNBhis7DwnWeGdHv8")
     f.close()
 
 #Delete whitespaces at start & end
@@ -56,7 +56,7 @@ def newTrigger(trigger, response):
     print("triggers file saved")
 
 #Create Bot.
-bot = telebot.TeleBot("YOUR TOKEN HERE!")
+bot = telebot.TeleBot("230059908:AAH4s9ZHe2ylGydwMXTNBhis7DwnWeGdHv8")
 
 #Adds another trigger-response. ex: "/add Hi / Hi!! :DD"
 @bot.message_handler(commands=['add'])
